@@ -1,6 +1,6 @@
 # Gmail-Clone
 
-### Screenshots of My Gmail Clone Project
+ Screenshots of My Gmail Clone Project
 
 
 ![Screenshot_1629982627](https://user-images.githubusercontent.com/48391281/130970221-ff443a05-0e11-4b1c-9599-171d1c3ac7c2.png)
