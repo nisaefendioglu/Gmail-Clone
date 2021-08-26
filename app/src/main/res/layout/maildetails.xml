@@ -6,11 +6,11 @@
     <Button
         android:id="@+id/back"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="←"
-        android:textSize="40dp"
+        android:layout_height="55dp"
+        android:text="  ←   "
+        android:textSize="25dp"
         android:textColor="@color/white"
-        android:gravity="left"
+        android:gravity="center_vertical"
         android:background="#B31313"/>
 
     <ImageView
