@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="←"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:background="#B31313"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_rowSpan="2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="80dp"
+        android:src="@menu/circle"/>
+
+    <TextView
+        android:id="@+id/mailNames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="G"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginLeft="56dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="@color/black"
+        android:text="Google"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:textSize="10dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="#95a5a6"
+        android:text="Google@gmail.com"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."/>
+
+    <Button
+        android:id="@+id/backMail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/back" />
+
+    <Button
+        android:id="@+id/reply"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/reply"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="180dp"
+        />
+
+    <Button
+        android:id="@+id/replyAll"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/replyall"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="300dp"
+        />
+
+</RelativeLayout>

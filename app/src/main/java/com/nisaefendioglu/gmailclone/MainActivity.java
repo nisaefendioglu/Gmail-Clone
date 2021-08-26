@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ListView gmailListView;
-    final ArrayList<MailList> mailList = new ArrayList<MailList>();
+    final ArrayList<MailList> mailList = new ArrayList<>();
     FloatingActionButton sendMessage;
 
 
@@ -25,12 +26,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         sendMessage = findViewById(R.id.sendMessage);
-        sendMessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplication(),SendMessage.class);
-                startActivity(intent);
-            }
+        sendMessage.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplication(),SendMessage.class);
+            startActivity(intent);
         });
 
         gmailListView = findViewById(R.id.gmailListView);
@@ -45,12 +43,15 @@ public class MainActivity extends AppCompatActivity {
         mailList.add(new MailList("Karsu","It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).","K",R.menu.circle3));
 
 
-
-
         MailAdapter mailAdapter = new MailAdapter(this, mailList);
         if (gmailListView != null) {
             gmailListView.setAdapter(mailAdapter);
         }
+
+        gmailListView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent = new Intent(getApplication(),MailDetails.class);
+            startActivity(intent);
+        });
 
     }
 }

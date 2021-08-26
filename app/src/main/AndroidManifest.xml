@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SendMessage"/>
+        <activity android:name=".MailDetails"/>
     </application>
 
 </manifest>
