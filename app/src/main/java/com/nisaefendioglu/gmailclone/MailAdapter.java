@@ -16,10 +16,10 @@ public class MailAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private ArrayList<MailList> mailArrayList;
 
-    public MailAdapter(Activity activity, ArrayList<MailList> padisahArrayList) {
+    public MailAdapter(Activity activity, ArrayList<MailList> gmailArrayList) {
 
         this.mInflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.mailArrayList = padisahArrayList;
+        this.mailArrayList = gmailArrayList;
     }
 
     @Override
